@@ -1,16 +1,57 @@
 ﻿<html>
 <head>
-<title>$_cmd-chat</title>
+    <title>$_cmd-chat</title>
 </head>
-<body>
-<style>
-center
-{
-font-size: 24px;
-font-family : monospace;
-}
 
-</style><br><br>
-<center>Welcome to <b>$_cmdchat<b></center>
+<body>
+    <style>
+        #title {
+            font-size: 24px;
+            font-family: monospace;
+        }
+
+        body {
+            background-image: url(images/lake.jpg);
+            background-color: rgba(0, 0, 0, 0.1);
+            background-blend-mode: multiply;
+            color: white;
+        }
+
+        .center {
+            margin: 0 auto;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #body_div {
+            margin-top: 1rem;
+            width: 90vw;
+            height: 83vh;
+        }
+
+        #prompt {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 0.5rem;
+            font-family: monospace;
+            font-size: 1.2rem;
+            border: none;
+            color: white;
+            padding: 0.5rem;
+            outline: none;
+        }
+    </style><br>
+    <center><span id="title">Welcome to <b>$_cmdchat</b></span></center>
+
+    <div class="center" id="body_div">
+        <textarea id="prompt">rvnd $></textarea>
+
+    </div>
+
+
 </body>
 </html>
